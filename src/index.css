@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ventureo-blue: #2563eb;
+    --ventureo-blue-dark: #1d4ed8;
+    --ventureo-indigo: #332fac;
+    --ventureo-amber: #f59e0b;
+    --ventureo-slate-dark: #191b1f;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #191b1f;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Inter Tight', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Ventureo-inspired signature scribble underline */
+.ventureo-scribble {
+  position: relative;
+  display: inline-block;
+}
+
+.ventureo-scribble svg {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* Subtle glow and glass styles */
+.ventureo-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ventureo-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -8px rgba(37, 99, 235, 0.1), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Ventureo arrow badge interaction */
+.ventureo-arrow-btn:hover .ventureo-arrow-circle {
+  transform: translateX(3px);
+}
+

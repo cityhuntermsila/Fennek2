@@ -1,0 +1,11 @@
+{
+  "name": "Remix Fenneco3",
+  "description": "AI-powered English learning SaaS platform for Algerian 3PS primary education inspired by Ventureo's minimalist aesthetic with voice recognition, visual flashcards, parent/teacher portals, and gamification.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
